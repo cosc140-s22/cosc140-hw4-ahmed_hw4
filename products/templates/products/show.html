@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+  <div class="row text-center">
+    <h1 class="display-3">Details for <strong>{{product.name}}</strong></h1>
+  </div>
+  <div class="row" id="list-row">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h3>Description</h3>
+        <h5>{{product.description}}</h5>
+      </li>
+      <li class="list-group-item">
+        <h3>Ages</h3>
+        <h5>{{product.age_range}}</h5>
+      </li>
+      <li class="list-group-item">
+        <h3>Price</h3>
+        <h5>{{product.price}}</h5>
+      </li>
+    </ul>
+  </div>
+
+  <div class="row" id="button-row">
+    <a href="{% url 'index' %}" class="btn btn-primary">Back</a>
+  </div>
+</div>
+
+{% endblock %}

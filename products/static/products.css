@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.right {
+  text-align: right;
+}
+.list-group-item {
+  transition: all 0.2s ease-in; /* Animation */
+}
+
+.list-group-item:hover {
+  transform: scale(1.1);
+  background-color: #181d20;
+  color: white;
+}
+#list-row {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#button-row {
+  width: 5vw;
+}

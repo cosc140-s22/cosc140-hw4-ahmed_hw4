@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Ages</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for product in products %}
+    <tr>
+      <td><a href="{% url 'show' product.id %}">{{product.name}}</a></td>
+      <td>{{product.description|truncatewords:5}}</td>
+      <td class="right">{{ product.age_range }}</td>
+      <td class="right">{{product.price}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
