@@ -12,4 +12,8 @@
 
 ## Feedback
 
-Once you commit and submit your work to Github, I'll update this section with feedback.
+S
+
+There's a minor bug in your `age_range` method on the `Product` model class; running `./manage.py test` will show it.  
+
+Everything else looks good!  That's some eyepopping CSS on the product details page :-)
