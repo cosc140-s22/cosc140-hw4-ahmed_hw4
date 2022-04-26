@@ -14,6 +14,6 @@ class Product(models.Model):
         if(self.maximum_age_appropriate == -1):
             return F"Ages {self.minimum_age_appropriate} and up"
         elif(self.minimum_age_appropriate == self.maximum_age_appropriate):
-            return F"Ages{self.maximum_age_appropriate}"
+            return F"Age {self.maximum_age_appropriate}"
         else:
             return F"Ages {self.minimum_age_appropriate} to {self.maximum_age_appropriate}"
