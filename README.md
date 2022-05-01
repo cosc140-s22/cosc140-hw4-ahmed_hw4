@@ -17,3 +17,7 @@ S
 There's a minor bug in your `age_range` method on the `Product` model class; running `./manage.py test` will show it.  
 
 Everything else looks good!  That's some eyepopping CSS on the product details page :-)
+
+---
+
+Fix looks good!
